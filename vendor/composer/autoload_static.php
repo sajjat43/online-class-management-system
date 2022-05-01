@@ -534,6 +534,7 @@ class ComposerStaticInita843575d604dd37305762bf3ba933ffe
         'App\\Http\\Controllers\\admin\\TeachersController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/TeachersController.php',
         'App\\Http\\Controllers\\admin\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/UserController.php',
         'App\\Http\\Controllers\\admin\\classConroller' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/classConroller.php',
+        'App\\Http\\Controllers\\attendanceController' => __DIR__ . '/../..' . '/app/Http/Controllers/attendanceController.php',
         'App\\Http\\Controllers\\website\\AboutController' => __DIR__ . '/../..' . '/app/Http/Controllers/website/AboutController.php',
         'App\\Http\\Controllers\\website\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/website/HomeController.php',
         'App\\Http\\Controllers\\website\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/website/LoginController.php',

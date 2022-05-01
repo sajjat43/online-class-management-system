@@ -24,7 +24,7 @@ class attendanceController extends Controller
 
 
         for ($i = 0; $i < count($Sname); $i++) {
-            // dd($request->attendance_all);
+
             $saveRecord = ([
 
                 'class_id' => $request->class_id[$i],
