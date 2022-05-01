@@ -15,7 +15,7 @@ class CreateAttendancesTable extends Migration
     {
         Schema::create('attendances', function (Blueprint $table) {
             $table->id();
-            // $table->date('date')->nullable();
+            // $table->date('dateAdd')->nullable();
             $table->string('Sname')->nullable();
             $table->integer('Sid')->nullable();
             $table->string('attendance')->nullable();

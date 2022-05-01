@@ -14,7 +14,7 @@ class attendanceController extends Controller
         // dd($request->all());
 
         // $attendance = Attendance::create([
-        //     'date' => $request->date,
+        //     'dateAdd' => $request->date,
 
         // ]);
 

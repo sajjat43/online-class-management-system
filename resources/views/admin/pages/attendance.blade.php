@@ -2,14 +2,14 @@
 @section('content')
     <form action="{{ route('student.attendance.store') }}" method='POST' enctype="multipart/form-data">
         @csrf
-        {{-- <div>
+        <div>
             <div class="col-12 col-sm-6">
                 <div class="form-group">
                     <label>Date</label>
-                    <input required name="date" type="date" class="form-control">
+                    <input required name="dateAdd" type="date" class="form-control">
                 </div>
             </div>
-        </div> --}}
+        </div>
         <div class="content container-fluid pt-30 pb-30">
             <div id="divToPrint" class="row">
                 <div class="col-sm-12">
