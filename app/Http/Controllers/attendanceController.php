@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Attendance;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -12,10 +13,10 @@ class attendanceController extends Controller
     {
         // dd($request->all());
 
-        $attendance = Attendance::create([
-            'date' => $request->date,
+        // $attendance = Attendance::create([
+        //     'date' => $request->date,
 
-        ]);
+        // ]);
 
         $Sname = $request->Sname;
         $Sid = $request->Sid;
@@ -31,6 +32,7 @@ class attendanceController extends Controller
                 'Sname' => $request->Sname[$i],
                 'Sid' => $request->Sid[$i],
                 'attendance' => $request->attendance[$i],
+                'date' => Carbon::now()
 
             ]);
             // dd($key);
