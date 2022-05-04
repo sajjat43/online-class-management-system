@@ -44,6 +44,7 @@
                                                         href="{{ route('website.profile') }}">Profile</a></li>
                                                 <li class=""><a
                                                         href="{{ route('website.routine') }}">Class Schedule</a></li>
+
                                                 <li class=""><a
                                                         href="{{ route('website.exam') }}">Exam</a></li>
                                                 <li class=""><a
@@ -62,6 +63,9 @@
                                                 <li class=""><a
                                                         href="{{ route('website.teacher.routine') }}">Class
                                                         Schedule</a>
+                                                </li>
+                                                <li class=""><a
+                                                        href="{{ route('question.uploade') }}">Question Uploade</a>
                                                 </li>
                                                 <li class=""><a
                                                         href="{{ route('website.teacher.exam') }}">Exam</a></li>

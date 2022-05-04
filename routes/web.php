@@ -29,6 +29,7 @@ use App\Http\Controllers\admin\AttendanceController;
 use App\Http\Controllers\admin\classConroller;
 use App\Http\Controllers\admin\ResultController;
 use App\Http\Controllers\attendanceController as ControllersAttendanceController;
+use App\Http\Controllers\fileController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -246,3 +247,13 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('admin/student/view/{id}', [StudentsController::class, 'studentView'])->name('student.view');
     Route::get('admin/student/details/{id}', [StudentsController::class, 'studentDetails'])->name('student.details');
 });
+
+
+
+// file systrm -----question
+
+Route::get('question/uplode', [fileController::class, 'questionUpload'])->name('question.uploade');
+Route::post('question/store', [fileController::class, 'questionStore'])->name('question.store');
+Route::get('question/view/a', [fileController::class, 'questionView'])->name('question.view');
+Route::get('question/download/{id}', [fileController::class, 'questionDownload'])->name('question.download');
+Route::get('question/file/view/{id}', [fileController::class, 'questionFileView'])->name('question.file.view');

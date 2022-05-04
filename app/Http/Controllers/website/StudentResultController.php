@@ -14,13 +14,14 @@ class StudentResultController extends Controller
 
     {
         $subjects = Subject::all();
-        $data=Result::where('user_id',auth()->user()->user_id)->get();
-        return view('website.layouts.student_result',compact('data','subjects'));
+        $data = Result::where('user_id', auth()->user()->user_id)->get();
+        return view('website.layouts.student_result', compact('data', 'subjects'));
     }
     public function exam()
     {
-        
-        $exam=Exam::where('class',auth()->user()->class)->get();
-        return view('website.layouts.student_exam',compact('exam'));
+
+        $exam = Exam::where('class', auth()->user()->class)->get();
+        dd($exam);
+        return view('website.layouts.student_exam', compact('exam'));
     }
 }
