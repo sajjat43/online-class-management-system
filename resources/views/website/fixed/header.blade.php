@@ -47,8 +47,7 @@
 
                                                 <li class=""><a
                                                         href="{{ route('website.exam') }}">Exam</a></li>
-                                                <li> <a href="{{ route('qsn.view') }}">question</a>
-                                                </li>
+
                                                 <li class=""><a
                                                         href="{{ route('website.result') }}">Result</a></li>
                                                 <li class=""><a

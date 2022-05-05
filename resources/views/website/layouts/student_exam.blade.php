@@ -47,7 +47,8 @@
                                             <td>{{ $a->class }}</td>
                                             <td>{{ optional($a->subject)->subject_name }}</td>
                                             {{-- <td>{{ optional($a->question)->question }}</td> --}}
-                                            {{-- <td> <a href="{{ route('student.qsn.view', $data->class) }}">question</a></td> --}}
+                                            <td> <a href="{{ route('student.qsn.view', $a->class) }}">question</a>
+                                            </td>
                                             <td>{{ $a->start_time }}</td>
 
                                             <td>{{ $a->end_time }}</td>

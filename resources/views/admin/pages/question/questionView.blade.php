@@ -9,12 +9,12 @@
                 <th>Download</th>
             </tr>
             @foreach ($data as $data)
-                <tr>
-                    <td>{{ $data->class }}</td>
-                    {{-- <td>{{ $file->question }}</td> --}}
-                    <td><a href="{{ route('question.file.view', $data->id) }}">view</a></td>
-                    <td><a href="{{ route('question.download', $data->question) }}">Download</a></td>
-                </tr>
+            <tr>
+                <td>{{ $data->class }}</td>
+                {{-- <td>{{ $file->question }}</td> --}}
+                <td><a href="{{ route('question.file.view', $data->id) }}">view</a></td>
+                <td><a href="{{ route('question.download', $data->question) }}">Download</a></td>
+            </tr>
             @endforeach
         </table>
     </div>

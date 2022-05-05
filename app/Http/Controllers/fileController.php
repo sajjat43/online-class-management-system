@@ -45,10 +45,10 @@ class fileController extends Controller
         return view('admin.pages.question.qsn_file_view', compact('data'));
     }
 
-    public function viewQ($class)
+    public function viewQ()
     {
-        $data = Question::where('class', $class)->get();
-        return view('website.pages.question.view', compact('data'));
+
+        return view('website.pages.question.view');
     }
     public function studentQuestionView($class)
     {
