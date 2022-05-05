@@ -41,20 +41,10 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label>Class</label>
-                                    <select required name="class" class="form-control select">
-                                        <option>Select Class</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                        <option>12</option>
+                                    <select name="class" class="form-control" id="exampleFormControlSelect1">
+                                        @foreach ($class as $data)
+                                            <option value="{{ $data->id }}">{{ $data->addclass }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -86,7 +76,7 @@
                                     <input required name="time" type="time" class="form-control">
                                 </div>
                             </div>
-                            
+
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>

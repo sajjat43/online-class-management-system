@@ -59,10 +59,11 @@
                                     <td>{{$key+1}}</td>
                                     <td>{{$a->class}}</td>
                                     <td>{{optional($a -> subject)->subject_name}}</td>
+                                    
                                     <td>{{$a->link}}</td>
                                     <td>{{$a->time}}</td>
                                     <td>{{$a->date}}</td>
-                                    
+
                                     <td class="text-end">
                                         <div class="actions">
                                             <a href="{{route('admin.routine.edit',$a->id)}}"

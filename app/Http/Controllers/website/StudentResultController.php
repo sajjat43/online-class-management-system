@@ -21,7 +21,8 @@ class StudentResultController extends Controller
     {
 
         $exam = Exam::where('class', auth()->user()->class)->get();
-        dd($exam);
-        return view('website.layouts.student_exam', compact('exam'));
+        // dd($exam);
+        $to = Exam::all();
+        return view('website.layouts.student_exam', compact('exam', 'to'));
     }
 }

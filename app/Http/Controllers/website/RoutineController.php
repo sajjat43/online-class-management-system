@@ -12,10 +12,9 @@ class RoutineController extends Controller
 {
     public function routine()
     {
-        
-        $data=Routine::where('class',auth()->user()->class)->get();
-        return view('website.layouts.student_routine',compact('data'));
-    }
 
-   
+        $data = Routine::where('class', auth()->user()->class)->get();
+        $to = Routine::all();
+        return view('website.layouts.student_routine', compact('data', 'to'));
+    }
 }

@@ -13,6 +13,7 @@ class StudentsController extends Controller
 {
     public function student(Request $request)
     {
+        // dd($request);
         $search = $request->query('search');
         if ($search) {
             $users = User::where('class', 'Like', '%' . $search . '%')
@@ -89,9 +90,9 @@ class StudentsController extends Controller
     }
     public function view($id)
     {
-        //dd("$user_id");
+        // dd($id);
         $users = User::find($id);
-        //dd($users);
+        // dd($users);
         return view('admin.pages.student_view', compact('users'));
     }
 
