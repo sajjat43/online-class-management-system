@@ -257,3 +257,8 @@ Route::post('question/store', [fileController::class, 'questionStore'])->name('q
 Route::get('question/view/a', [fileController::class, 'questionView'])->name('question.view');
 Route::get('question/download/{id}', [fileController::class, 'questionDownload'])->name('question.download');
 Route::get('question/file/view/{id}', [fileController::class, 'questionFileView'])->name('question.file.view');
+
+// student question show
+
+Route::get('view', [fileController::class, 'viewQ'])->name('qsn.view');
+Route::get('student/question/{id}', [fileController::class, 'studentQuestionView'])->name('student.qsn.view');

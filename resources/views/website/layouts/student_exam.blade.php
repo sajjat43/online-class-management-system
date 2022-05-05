@@ -25,7 +25,7 @@
                                         <th>Exam Name</th>
                                         <th>Class</th>
                                         <th>Subject</th>
-                                        {{-- <th>question</th> --}}
+                                        <th>question</th>
                                         <th>Start Time</th>
                                         <th>End Time</th>
                                         <th>Date</th>
@@ -47,7 +47,9 @@
                                             <td>{{ $a->class }}</td>
                                             <td>{{ optional($a->subject)->subject_name }}</td>
                                             {{-- <td>{{ optional($a->question)->question }}</td> --}}
+                                            {{-- <td> <a href="{{ route('student.qsn.view', $data->class) }}">question</a></td> --}}
                                             <td>{{ $a->start_time }}</td>
+
                                             <td>{{ $a->end_time }}</td>
                                             <td>{{ $a->date }}</td>
                                             <td><a href="{{ $a->link }}" class="btn btn-primary">Join Now</a></td>

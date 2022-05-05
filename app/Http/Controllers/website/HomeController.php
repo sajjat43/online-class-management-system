@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\website;
 
 use App\Models\AddClass;
+use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

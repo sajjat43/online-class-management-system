@@ -44,4 +44,15 @@ class fileController extends Controller
         $data = Question::find($id);
         return view('admin.pages.question.qsn_file_view', compact('data'));
     }
+
+    public function viewQ($class)
+    {
+        $data = Question::where('class', $class)->get();
+        return view('website.pages.question.view', compact('data'));
+    }
+    public function studentQuestionView($class)
+    {
+        $data = Question::where('class', $class)->get();
+        return view('website.pages.question.student_quuestion', compact('data'));
+    }
 }
