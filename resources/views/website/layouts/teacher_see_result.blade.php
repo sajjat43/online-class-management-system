@@ -17,7 +17,7 @@
                             <h1 class="text-info">Subject =
                                 {{ optional($ax->subject)->subject_name }}
                             </h1>
-                            <h1 class="text-info">Grate =
+                            <h1 class="text-info">Mark =
                                 {{ $max }}
                             </h1>
 
